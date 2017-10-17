@@ -7,6 +7,7 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.google.firebase.messaging.FirebaseMessaging
 import com.ikurek.pwr.jsos.JSOSFragment
 import com.ikurek.pwr.news.NewsFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
         setupNavigationDrawer()
         swapFragments(NewsFragment())
+        FirebaseMessaging.getInstance().subscribeToTopic("jsos_status")
     }
 
     override fun onBackPressed() {
