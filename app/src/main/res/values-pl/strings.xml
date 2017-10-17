@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PWr</string>
+    <string name="navigation_drawer_open">Otwórz szufladę nawigacji</string>
+    <string name="navigation_drawer_close">Zamknij szufladę nawigacji</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="navigation_drawer_news">Aktualności</string>
+    <string name="navigation_drawer_buildings">Kampus</string>
+    <string name="mavigation_drawer_jsos_status">Status JSOS</string>
+    <string name="fragent_jsos_current_system_state_title">Aktualny status systemu JSOS:</string>
+    <string name="fragment_jsos_refresh">Odśwież</string>
+</resources>

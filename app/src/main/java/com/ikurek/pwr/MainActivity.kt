@@ -7,11 +7,14 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.crashlytics.android.Crashlytics
 import com.google.firebase.messaging.FirebaseMessaging
 import com.ikurek.pwr.jsos.JSOSFragment
 import com.ikurek.pwr.news.NewsFragment
+import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main_content.*
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setSupportActionBar(toolbar)
         setupNavigationDrawer()
         swapFragments(NewsFragment())
+        Fabric.with(this, Crashlytics())
         FirebaseMessaging.getInstance().subscribeToTopic("jsos_status")
     }
 
@@ -36,18 +40,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_news -> {
                 swapFragments(NewsFragment())
             }
-            R.id.nav_gallery -> {
+            R.id.nav_buildings -> {
+
+            }
+            R.id.nav_jsosstatus -> {
                 swapFragments(JSOSFragment())
             }
-            R.id.nav_slideshow -> {
 
-            }
-            R.id.nav_manage -> {
-
-            }
             R.id.nav_share -> {
 
             }

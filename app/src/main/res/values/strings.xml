@@ -6,6 +6,10 @@
 
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_news">News</string>
+    <string name="navigation_drawer_buildings">Buildings</string>
+    <string name="mavigation_drawer_jsos_status">JSOS Status</string>
+
+    <string name="fragent_jsos_current_system_state_title">Current JSOS system state:</string>
+    <string name="fragment_jsos_refresh">Refresh</string>
 </resources>
