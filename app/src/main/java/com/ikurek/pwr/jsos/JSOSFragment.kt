@@ -42,7 +42,7 @@ class JSOSFragment : Fragment() {
 
     /**
      * Sends HTTP GET request to czyjsosdziala.pl
-     * Receives true/false parameter defining current JSOS status
+     * Receives a text describing current JSOS status
      * Usually it's false
      * Updates the UI with received data
      * @param view Root view used to update layout elements

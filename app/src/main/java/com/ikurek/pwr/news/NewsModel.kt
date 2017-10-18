@@ -5,4 +5,8 @@ import java.util.*
 /**
  * Created by igor on 15.10.17.
  */
-data class NewsModel(var title : String, var url : String, var date : String)
+data class NewsModel(
+        val title: String,
+        val url: String,
+        val date: Date,
+        val source: String)

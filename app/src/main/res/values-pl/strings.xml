@@ -9,4 +9,7 @@
     <string name="mavigation_drawer_jsos_status">Status JSOS</string>
     <string name="fragent_jsos_current_system_state_title">Aktualny status systemu JSOS:</string>
     <string name="fragment_jsos_refresh">Odśwież</string>
+    <string name="action_exit">Wyjście</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="description_confirm_quit">Czy jesteś pewien, że chcesz opuścić aplikację?</string>
 </resources>
